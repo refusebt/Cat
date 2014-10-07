@@ -69,7 +69,7 @@
 									<string key="NSIdentifier">1</string>
 									<object class="NSView" key="NSView" id="26484948">
 										<nil key="NSNextResponder"/>
-										<int key="NSvFlags">256</int>
+										<int key="NSvFlags">274</int>
 										<array class="NSMutableArray" key="NSSubviews">
 											<object class="NSButton" id="436734512">
 												<reference key="NSNextResponder" ref="26484948"/>
@@ -270,14 +270,14 @@
 												<array class="NSMutableArray" key="NSSubviews">
 													<object class="NSClipView" id="506344911">
 														<reference key="NSNextResponder" ref="854612093"/>
-														<int key="NSvFlags">2304</int>
+														<int key="NSvFlags">2322</int>
 														<array class="NSMutableArray" key="NSSubviews">
 															<object class="NSTextView" id="135567728">
 																<reference key="NSNextResponder" ref="506344911"/>
 																<int key="NSvFlags">2322</int>
 																<string key="NSFrameSize">{557, 133}</string>
 																<reference key="NSSuperview" ref="506344911"/>
-																<reference key="NSNextKeyView" ref="198255467"/>
+																<reference key="NSNextKeyView" ref="408948226"/>
 																<string key="NSReuseIdentifierKey">_NS:1480</string>
 																<object class="NSTextContainer" key="NSTextContainer" id="381402820">
 																	<object class="NSLayoutManager" key="NSLayoutManager">
@@ -399,7 +399,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 												</array>
 												<string key="NSFrame">{{17, 37}, {559, 135}}</string>
 												<reference key="NSSuperview" ref="26484948"/>
-												<reference key="NSNextKeyView" ref="506344911"/>
+												<reference key="NSNextKeyView" ref="198255467"/>
 												<string key="NSReuseIdentifierKey">_NS:940</string>
 												<int key="NSsFlags">133122</int>
 												<reference key="NSVScroller" ref="198255467"/>
@@ -414,6 +414,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{15, 13}, {107, 18}}</string>
 												<reference key="NSSuperview" ref="26484948"/>
+												<reference key="NSNextKeyView" ref="140911405"/>
 												<string key="NSReuseIdentifierKey">_NS:771</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="518559144">
@@ -779,7 +780,9 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 												<object class="NSTextFieldCell" key="NSCell" id="901356895">
 													<int key="NSCellFlags">67108864</int>
 													<int key="NSCellFlags2">272629760</int>
-													<string key="NSContents">注意：♦按键定义字符与XCODE菜单表示的UTF8字符一致（比如↖相当于HOME）。 ♦热键不可与系统已定义热键冲突，否则无效。 ♦全部清空表示此功能无热键定义。</string>
+													<string type="base64-UTF8" key="NSContents">Tm90ZTogCuKZpiBUaGUgc2V0dGluZyBzaG9ydGN1dCBjaGFyIG11c3QgYmUgWENvZGUgbWVudSBVVEY4
+IGNoYXIuIEZvciBleGFtcGxlLCDihpYgaXMgSG9tZS4K4pmmIFRoZSBzZXR0aW5nIHNob3J0Y3V0IGNh
+bm5vdCBiZSB0aGUgc2FtZSB0byBYQ29kZSBLZXlCaW5kaW5ncy4gA</string>
 													<reference key="NSSupport" ref="659211261"/>
 													<string key="NSCellIdentifier">_NS:3944</string>
 													<reference key="NSControlView" ref="259674528"/>
@@ -1343,133 +1346,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">CatWindowControllerConfig</string>
-					<string key="superclassName">NSWindowController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="btnAppendTime:">id</string>
-						<string key="btnCommentReadClick:">id</string>
-						<string key="btnSaveAll:">id</string>
-						<string key="btnShortcutsConfirm:">id</string>
-						<string key="btnShortcutsReset:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="btnAppendTime:">
-							<string key="name">btnAppendTime:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnCommentReadClick:">
-							<string key="name">btnCommentReadClick:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnSaveAll:">
-							<string key="name">btnSaveAll:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnShortcutsConfirm:">
-							<string key="name">btnShortcutsConfirm:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnShortcutsReset:">
-							<string key="name">btnShortcutsReset:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="cbCommentFile">NSComboBox</string>
-						<string key="cbShortcuts">NSComboBox</string>
-						<string key="chkAlt">NSButton</string>
-						<string key="chkAppendTime">NSButton</string>
-						<string key="chkCommand">NSButton</string>
-						<string key="chkCtrl">NSButton</string>
-						<string key="chkShift">NSButton</string>
-						<string key="svCurrentComment">NSScrollView</string>
-						<string key="tabs">NSTabView</string>
-						<string key="tfKeyEquivalent">NSTextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="cbCommentFile">
-							<string key="name">cbCommentFile</string>
-							<string key="candidateClassName">NSComboBox</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="cbShortcuts">
-							<string key="name">cbShortcuts</string>
-							<string key="candidateClassName">NSComboBox</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="chkAlt">
-							<string key="name">chkAlt</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="chkAppendTime">
-							<string key="name">chkAppendTime</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="chkCommand">
-							<string key="name">chkCommand</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="chkCtrl">
-							<string key="name">chkCtrl</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="chkShift">
-							<string key="name">chkShift</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="svCurrentComment">
-							<string key="name">svCurrentComment</string>
-							<string key="candidateClassName">NSScrollView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tabs">
-							<string key="name">tabs</string>
-							<string key="candidateClassName">NSTabView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tfKeyEquivalent">
-							<string key="name">tfKeyEquivalent</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../Cat/CATWindowControllerConfig.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">CatWindowControllerConfig</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="btnAppendTime:">id</string>
-						<string key="btnCommentReadClick:">id</string>
-						<string key="btnSaveAll:">id</string>
-						<string key="btnShortcutsConfirm:">id</string>
-						<string key="btnShortcutsReset:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="btnAppendTime:">
-							<string key="name">btnAppendTime:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnCommentReadClick:">
-							<string key="name">btnCommentReadClick:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnSaveAll:">
-							<string key="name">btnSaveAll:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnShortcutsConfirm:">
-							<string key="name">btnShortcutsConfirm:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnShortcutsReset:">
-							<string key="name">btnShortcutsReset:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../Cat/CATWindowControllerConfig.m</string>
-					</object>
-				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">CatWindowControllerConfig</string>
 					<string key="superclassName">NSWindowController</string>
