@@ -7,10 +7,17 @@
 //
 
 #import <AppKit/AppKit.h>
+#import "CatUI.h"
+#import "CatData.h"
 
 @interface Cat : NSObject
+{
+
+}
+@property (nonatomic, readonly) NSBundle *bundle;
+@property (nonatomic, readonly) CatUI *catUI;
+@property (nonatomic, readonly) CatData *catData;
 
 + (instancetype)sharedPlugin;
 
-@property (nonatomic, strong, readonly) NSBundle* bundle;
 @end

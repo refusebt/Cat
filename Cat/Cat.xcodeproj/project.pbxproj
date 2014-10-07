@@ -7,20 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3987298A19E397CD001E2010 /* CatShortcutsUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3987298919E397CD001E2010 /* CatShortcutsUnit.m */; };
+		3987298D19E3987B001E2010 /* CatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3987298C19E3987B001E2010 /* CatData.m */; };
+		3987299019E39A03001E2010 /* CatLimitQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3987298F19E39A03001E2010 /* CatLimitQueue.m */; };
+		3987299719E3A56B001E2010 /* CatWindowControllerConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3987299119E3A56A001E2010 /* CatWindowControllerConfig.xib */; };
+		3987299819E3A56B001E2010 /* CatWindowControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3987299319E3A56A001E2010 /* CatWindowControllerConfig.m */; };
 		39B48E1519E246900014D8DA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B48E1419E246900014D8DA /* AppKit.framework */; };
 		39B48E1719E246900014D8DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B48E1619E246900014D8DA /* Foundation.framework */; };
 		39B48E1C19E246900014D8DA /* Cat.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 39B48E1B19E246900014D8DA /* Cat.xcscheme */; };
 		39B48E1F19E246900014D8DA /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E1E19E246900014D8DA /* Cat.m */; };
+		39B48E4919E2527E0014D8DA /* CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E4819E2527E0014D8DA /* CatKit.m */; };
+		39B48E5619E253300014D8DA /* NSObject+RFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E4D19E253300014D8DA /* NSObject+RFEvent.m */; };
+		39B48E5819E253300014D8DA /* RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E5119E253300014D8DA /* RFKit.m */; };
+		39B48E5919E253300014D8DA /* RFStorageKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E5319E253300014D8DA /* RFStorageKit.m */; };
+		39B48E5D19E2537B0014D8DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B48E5B19E2537B0014D8DA /* Cocoa.framework */; };
+		39B48E5E19E2537B0014D8DA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B48E5C19E2537B0014D8DA /* CoreFoundation.framework */; };
+		39B48E6219E259E90014D8DA /* CatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B48E6119E259E90014D8DA /* CatUI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3987298819E397CD001E2010 /* CatShortcutsUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatShortcutsUnit.h; sourceTree = "<group>"; };
+		3987298919E397CD001E2010 /* CatShortcutsUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatShortcutsUnit.m; sourceTree = "<group>"; };
+		3987298B19E3987B001E2010 /* CatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CatData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3987298C19E3987B001E2010 /* CatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CatData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3987298E19E39A03001E2010 /* CatLimitQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatLimitQueue.h; sourceTree = "<group>"; };
+		3987298F19E39A03001E2010 /* CatLimitQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatLimitQueue.m; sourceTree = "<group>"; };
+		3987299119E3A56A001E2010 /* CatWindowControllerConfig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatWindowControllerConfig.xib; sourceTree = "<group>"; };
+		3987299219E3A56A001E2010 /* CatWindowControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatWindowControllerConfig.h; sourceTree = "<group>"; };
+		3987299319E3A56A001E2010 /* CatWindowControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatWindowControllerConfig.m; sourceTree = "<group>"; };
+		398729A119E3AACB001E2010 /* CATSearchFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATSearchFile.h; sourceTree = "<group>"; };
+		398729A219E3AACB001E2010 /* CATSearchFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATSearchFile.m; sourceTree = "<group>"; };
+		398729A319E3AACB001E2010 /* CATSearchText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATSearchText.h; sourceTree = "<group>"; };
+		398729A419E3AACB001E2010 /* CATSearchText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATSearchText.m; sourceTree = "<group>"; };
+		398729A519E3AACB001E2010 /* CATWindowControllerImageCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATWindowControllerImageCheck.h; sourceTree = "<group>"; };
+		398729A619E3AACB001E2010 /* CATWindowControllerImageCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATWindowControllerImageCheck.m; sourceTree = "<group>"; };
+		398729A719E3AACB001E2010 /* CATWindowImageCheck.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CATWindowImageCheck.xib; sourceTree = "<group>"; };
 		39B48E1119E246900014D8DA /* Cat.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cat.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B48E1419E246900014D8DA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		39B48E1619E246900014D8DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		39B48E1A19E246900014D8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39B48E1B19E246900014D8DA /* Cat.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Cat.xcscheme; path = Cat.xcodeproj/xcshareddata/xcschemes/Cat.xcscheme; sourceTree = SOURCE_ROOT; };
-		39B48E1D19E246900014D8DA /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
-		39B48E1E19E246900014D8DA /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		39B48E1D19E246900014D8DA /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Cat.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		39B48E1E19E246900014D8DA /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Cat.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		39B48E4519E251110014D8DA /* CatDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatDefine.h; sourceTree = "<group>"; };
+		39B48E4719E2527E0014D8DA /* CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CatKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		39B48E4819E2527E0014D8DA /* CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CatKit.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		39B48E4B19E253300014D8DA /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ARCMacros.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		39B48E4C19E253300014D8DA /* NSObject+RFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RFEvent.h"; sourceTree = "<group>"; };
+		39B48E4D19E253300014D8DA /* NSObject+RFEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RFEvent.m"; sourceTree = "<group>"; };
+		39B48E5019E253300014D8DA /* RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFKit.h; sourceTree = "<group>"; };
+		39B48E5119E253300014D8DA /* RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFKit.m; sourceTree = "<group>"; };
+		39B48E5219E253300014D8DA /* RFStorageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStorageKit.h; sourceTree = "<group>"; };
+		39B48E5319E253300014D8DA /* RFStorageKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStorageKit.m; sourceTree = "<group>"; };
+		39B48E5B19E2537B0014D8DA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		39B48E5C19E2537B0014D8DA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		39B48E5F19E256650014D8DA /* Cat-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cat-Prefix.pch"; sourceTree = "<group>"; };
+		39B48E6019E259E90014D8DA /* CatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatUI.h; sourceTree = "<group>"; };
+		39B48E6119E259E90014D8DA /* CatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatUI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B48E5D19E2537B0014D8DA /* Cocoa.framework in Frameworks */,
+				39B48E5E19E2537B0014D8DA /* CoreFoundation.framework in Frameworks */,
 				39B48E1519E246900014D8DA /* AppKit.framework in Frameworks */,
 				39B48E1719E246900014D8DA /* Foundation.framework in Frameworks */,
 			);
@@ -39,6 +84,9 @@
 		39B48E0819E246900014D8DA = {
 			isa = PBXGroup;
 			children = (
+				39B48E4A19E253300014D8DA /* RF */,
+				39B48E1919E246900014D8DA /* Supporting Files */,
+				39B48E4419E250DB0014D8DA /* old */,
 				39B48E1819E246900014D8DA /* Cat */,
 				39B48E1319E246900014D8DA /* Frameworks */,
 				39B48E1219E246900014D8DA /* Products */,
@@ -56,6 +104,8 @@
 		39B48E1319E246900014D8DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39B48E5B19E2537B0014D8DA /* Cocoa.framework */,
+				39B48E5C19E2537B0014D8DA /* CoreFoundation.framework */,
 				39B48E1419E246900014D8DA /* AppKit.framework */,
 				39B48E1619E246900014D8DA /* Foundation.framework */,
 			);
@@ -65,9 +115,23 @@
 		39B48E1819E246900014D8DA /* Cat */ = {
 			isa = PBXGroup;
 			children = (
+				39B48E5F19E256650014D8DA /* Cat-Prefix.pch */,
+				39B48E4519E251110014D8DA /* CatDefine.h */,
 				39B48E1D19E246900014D8DA /* Cat.h */,
 				39B48E1E19E246900014D8DA /* Cat.m */,
-				39B48E1919E246900014D8DA /* Supporting Files */,
+				3987298B19E3987B001E2010 /* CatData.h */,
+				3987298C19E3987B001E2010 /* CatData.m */,
+				39B48E6019E259E90014D8DA /* CatUI.h */,
+				39B48E6119E259E90014D8DA /* CatUI.m */,
+				39B48E4719E2527E0014D8DA /* CatKit.h */,
+				39B48E4819E2527E0014D8DA /* CatKit.m */,
+				3987298819E397CD001E2010 /* CatShortcutsUnit.h */,
+				3987298919E397CD001E2010 /* CatShortcutsUnit.m */,
+				3987298E19E39A03001E2010 /* CatLimitQueue.h */,
+				3987298F19E39A03001E2010 /* CatLimitQueue.m */,
+				3987299219E3A56A001E2010 /* CatWindowControllerConfig.h */,
+				3987299319E3A56A001E2010 /* CatWindowControllerConfig.m */,
+				3987299119E3A56A001E2010 /* CatWindowControllerConfig.xib */,
 			);
 			path = Cat;
 			sourceTree = "<group>";
@@ -79,6 +143,37 @@
 				39B48E1B19E246900014D8DA /* Cat.xcscheme */,
 			);
 			name = "Supporting Files";
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		39B48E4419E250DB0014D8DA /* old */ = {
+			isa = PBXGroup;
+			children = (
+				398729A119E3AACB001E2010 /* CATSearchFile.h */,
+				398729A219E3AACB001E2010 /* CATSearchFile.m */,
+				398729A319E3AACB001E2010 /* CATSearchText.h */,
+				398729A419E3AACB001E2010 /* CATSearchText.m */,
+				398729A519E3AACB001E2010 /* CATWindowControllerImageCheck.h */,
+				398729A619E3AACB001E2010 /* CATWindowControllerImageCheck.m */,
+				398729A719E3AACB001E2010 /* CATWindowImageCheck.xib */,
+			);
+			name = old;
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		39B48E4A19E253300014D8DA /* RF */ = {
+			isa = PBXGroup;
+			children = (
+				39B48E4B19E253300014D8DA /* ARCMacros.h */,
+				39B48E4C19E253300014D8DA /* NSObject+RFEvent.h */,
+				39B48E4D19E253300014D8DA /* NSObject+RFEvent.m */,
+				39B48E5019E253300014D8DA /* RFKit.h */,
+				39B48E5119E253300014D8DA /* RFKit.m */,
+				39B48E5219E253300014D8DA /* RFStorageKit.h */,
+				39B48E5319E253300014D8DA /* RFStorageKit.m */,
+			);
+			name = RF;
+			path = Cat/RF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3987299719E3A56B001E2010 /* CatWindowControllerConfig.xib in Resources */,
 				39B48E1C19E246900014D8DA /* Cat.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +244,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B48E6219E259E90014D8DA /* CatUI.m in Sources */,
+				3987298A19E397CD001E2010 /* CatShortcutsUnit.m in Sources */,
+				39B48E5919E253300014D8DA /* RFStorageKit.m in Sources */,
+				3987299019E39A03001E2010 /* CatLimitQueue.m in Sources */,
+				39B48E5619E253300014D8DA /* NSObject+RFEvent.m in Sources */,
 				39B48E1F19E246900014D8DA /* Cat.m in Sources */,
+				3987299819E3A56B001E2010 /* CatWindowControllerConfig.m in Sources */,
+				39B48E5819E253300014D8DA /* RFKit.m in Sources */,
+				3987298D19E3987B001E2010 /* CatData.m in Sources */,
+				39B48E4919E2527E0014D8DA /* CatKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +335,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cat/Cat-Prefix.pch";
 				INFOPLIST_FILE = Cat/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -244,6 +351,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cat/Cat-Prefix.pch";
 				INFOPLIST_FILE = Cat/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -271,6 +380,7 @@
 				39B48E2419E246900014D8DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

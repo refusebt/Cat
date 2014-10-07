@@ -1,0 +1,25 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <AppKit/AppKit.h>
+
+	#import "NSObject+RFEvent.h"
+	#import "RFKit.h"
+	#import "RFStorageKit.h"
+
+	#import "CatDefine.h"
+	#import "CatKit.h"
+#endif
+
+//#ifndef __OPTIMIZE__
+//	#define NSLog(...) NSLog(__VA_ARGS__)
+//#else
+//	#define NSLog(...)
+//#endif

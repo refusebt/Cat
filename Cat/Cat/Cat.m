@@ -8,61 +8,86 @@
 
 #import "Cat.h"
 
-static Cat *sharedPlugin;
+static Cat *s_sharedPlugin = nil;
 
 @interface Cat()
+{
+}
 
-@property (nonatomic, strong, readwrite) NSBundle *bundle;
+- (void)update;
+
 @end
 
 @implementation Cat
+@synthesize bundle = _bundle;
+@synthesize catUI = _catUI;
+@synthesize catData = _catData;
 
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
     static dispatch_once_t onceToken;
     NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
-    if ([currentApplicationName isEqual:@"Xcode"]) {
+    if ([currentApplicationName isEqual:@"Xcode"])
+	{
         dispatch_once(&onceToken, ^{
-            sharedPlugin = [[self alloc] initWithBundle:plugin];
+            s_sharedPlugin = [[self alloc] initWithBundle:plugin];
+			[s_sharedPlugin update];
+			[s_sharedPlugin.catData load];
+			[s_sharedPlugin.catUI configWithData:s_sharedPlugin.catData];
         });
     }
 }
 
 + (instancetype)sharedPlugin
 {
-    return sharedPlugin;
+    return s_sharedPlugin;
 }
 
 - (id)initWithBundle:(NSBundle *)plugin
 {
-    if (self = [super init]) {
-        // reference to plugin's bundle, for resource access
-        self.bundle = plugin;
-        
-        // Create menu items, initialize UI, etc.
-
-        // Sample Menu Item:
-        NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-        if (menuItem) {
-            [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-            [actionMenuItem setTarget:self];
-            [[menuItem submenu] addItem:actionMenuItem];
-        }
+    if (self = [super init])
+	{
+        _bundle = plugin;
+		_catUI = [[CatUI alloc] init];
+		_catData = [[CatData alloc] init];
     }
     return self;
-}
-
-// Sample Action, for menu item:
-- (void)doMenuAction
-{
-    NSAlert *alert = [NSAlert alertWithMessageText:@"Hello, World" defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
-    [alert runModal];
 }
 
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)update
+{
+	NSInteger newVer = 0;
+	NSInteger oldVer = 0;
+	NSString *oldVerStr = @"";
+	NSString *newVerStr = @"";
+	NSDictionary *ud = [RFStorageKit defaultsDict];
+	NSDictionary *info = [_bundle infoDictionary];
+	
+	newVerStr = info[@"CFBundleShortVersionString"];
+	if (![NSString isEmpty:newVerStr])
+	{
+		newVer = [RFKit verStrToInt:newVerStr];
+	}
+	oldVerStr = ud[@"Ver"];
+	if (![NSString isEmpty:oldVerStr])
+	{
+		oldVer = [RFKit verStrToInt:oldVerStr];
+	}
+
+	if (oldVer != newVer)
+	{
+		// 更新
+		
+	}
+	
+	[ud setValue:newVerStr forKey:@"Ver"];
+	[RFStorageKit saveDefaultsDict:ud];
+	
 }
 
 @end
