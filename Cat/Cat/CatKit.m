@@ -29,10 +29,7 @@
 
 + (NSString *)getTimeString
 {
-	NSDate *date = [NSDate date];
-	NSDateFormatter *fmt = [[NSDateFormatter alloc] initWithDateFormat:@"%Y%m%d" allowNaturalLanguage:NO];
-	NSString *ret = [fmt stringFromDate:date];
-	return ret;
+	return [[NSDate date] yyyyMMdd];
 }
 
 @end
