@@ -124,7 +124,11 @@
 	}
 	
 	// Edit->Find->Find in Workspace…
-	_miXCodeFindInWorkspace = [self findMenuItemWithNames:[NSArray arrayWithObjects:@"Find", @"Find in Workspace…", nil]];
+	_miXCodeFindInWorkspace = [self findMenuItemWithNames:[NSArray arrayWithObjects:@"Find", @"Find in ", nil]];
+	if (_miXCodeFindInWorkspace == nil)
+	{
+		_miXCodeFindInWorkspace = [self findMenuItemWithNames:[NSArray arrayWithObjects:@"Find", @"Find in Workspace…", nil]];
+	}
 	if (_miXCodeFindInWorkspace == nil)
 	{
 		_miXCodeFindInWorkspace = [self findMenuItemWithNames:[NSArray arrayWithObjects:@"Edit", @"Find", @"Find in Workspace…", nil]];
@@ -534,7 +538,7 @@
 			NSMenuItem *item = [menu.itemArray objectAtIndex:i];
 			if ((item != nil) && (!item.isSeparatorItem))
 			{
-				if ([item.title isEqualToString:name])
+				if ([item.title hasPrefix:name])
 				{
 					ret = item;
 					break;
