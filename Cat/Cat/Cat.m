@@ -33,7 +33,12 @@ static Cat *s_sharedPlugin = nil;
             s_sharedPlugin = [[self alloc] initWithBundle:plugin];
 			[s_sharedPlugin update];
 			[s_sharedPlugin.catData load];
-			[s_sharedPlugin.catUI configWithData:s_sharedPlugin.catData];
+			
+			// 暂时应急
+			dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+				[s_sharedPlugin.catUI configWithData:s_sharedPlugin.catData];
+			});
+			
         });
     }
 }
